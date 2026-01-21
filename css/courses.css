@@ -1,0 +1,39 @@
+.cards-wide {
+    grid-template-columns: minmax(200px, 1fr);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-top .card-user {
+    width: 5rem;
+    height: 5rem;
+}
+
+.card-top .card-user img {
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.card-text > p {
+    font-size: 0.9rem;
+}
+
+.card-section .course-label {
+    font-size: 0.8rem;
+    padding: 2px 8px !important;
+}
+
+.card-section .divider {
+    width: calc(100% + 2rem);
+    height: 1px;
+    background-color: var(--off-white);
+    left: -1rem;
+}
+
+@media (min-width: 767px) {
+    .cards-wide {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

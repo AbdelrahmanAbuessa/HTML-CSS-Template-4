@@ -1,0 +1,40 @@
+@media (min-width: 576px) {
+    .side-item {
+        width: 100%;
+    }
+
+    .welcome .welcome-img {
+        display: block;
+    }
+
+    .welcome .bg-content {
+        text-align: start;
+    }
+
+    .welcome .user-image {
+        position: relative;
+        left: 1rem;
+        top: calc(100% - 3.5rem / 2);
+        transform: translate(0%);
+    }
+
+    .ticket-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news-article .news-image {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1187px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1652px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

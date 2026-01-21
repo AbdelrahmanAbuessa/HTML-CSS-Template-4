@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Template 4 - Courses</title>
+
+        <style>
+            * {
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--backdrop) !important;
+            }
+
+            .row {
+                margin: 0 !important;
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-lg.css" />
+        <link rel="stylesheet" href="css/courses.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="row w-100">
+            <div class="side col-lg-2 col-3 p-3">
+                <h1 class="user text-center mb-2 mt-2 fs-4 fw-bold">Abou</h1>
+
+                <div
+                    class="decoration d-none d-sm-block mt-3 mb-3 w-50 position-relative"
+                ></div>
+
+                <a
+                    href="index.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Dashboard</span>
+                </a>
+
+                <a
+                    href="settings.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2 ms-sm-2"
+                        >Settings</span
+                    >
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Profile</span>
+                </a>
+
+                <a
+                    href="projects.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Projects</span>
+                </a>
+
+                <a
+                    href="courses.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center active"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Courses</span>
+                </a>
+
+                <a
+                    href="friends.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Friends</span>
+                </a>
+
+                <a
+                    href="files.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Files</span>
+                </a>
+
+                <a
+                    href="plans.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Plans</span>
+                </a>
+            </div>
+
+            <div class="page col-9 col-lg-10 h-100 p-0">
+                <div
+                    class="top-bar ps-3 pe-3 container-fluid d-flex justify-content-between align-items-center"
+                >
+                    <div class="search d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" class="ms-2" />
+                    </div>
+
+                    <div
+                        class="top-icons d-flex justify-content-center align-items-center"
+                    >
+                        <div
+                            class="top-notifs position-relative me-3 d-flex justify-content-center align-items-center"
+                        >
+                            <i class="fa-regular fa-bell w-75 h-75"></i>
+                        </div>
+                        <div class="top-user">
+                            <img
+                                src="imgs/avatar.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content p-3">
+                    <span
+                        class="fw-bold title position-relative d-inline-block fs-1 mb-4"
+                    >
+                        Courses
+                    </span>
+
+                    <div class="cards-wide d-grid gap-3">
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-01.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-01.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Mastering Web Design
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Master The Art Of Web Designing And
+                                        Mocking, Prototyping And Creating Web
+                                        Design Architecture
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-02.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-02.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Data Structure And Algorithms
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Master The Art Of Data Strcuture And
+                                        Famous Algorithms Like Sorting, Dividing
+                                        And Conquering
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-03.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-03.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Responsive Web Design
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Mastering Responsive Web Design And
+                                        Media Queries And Know Everything About
+                                        Breakpoints
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-04.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-04.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Mastering Python
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Mastering Python To Prepare For Data
+                                        Science And AI And Automating Things in
+                                        Your Life
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-05.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-05.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        PHP Examples
+                                    </h6>
+                                    <p class="text-black-50">
+                                        PHP Tutorials And Examples And Practice
+                                        On Web Application And Connecting With
+                                        Databases
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-01.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-01.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Mastering Web Design
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Master The Art Of Web Designing And
+                                        Mocking, Prototyping And Creating Web
+                                        Design Architecture
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-02.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-02.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Data Structure And Algorithms
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Master The Art Of Data Strcuture And
+                                        Famous Algorithms Like Sorting, Dividing
+                                        And Conquering
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-03.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-03.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Responsive Web Design
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Mastering Responsive Web Design And
+                                        Media Queries And Know Everything About
+                                        Breakpoints
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-04.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-04.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        Mastering Python
+                                    </h6>
+                                    <p class="text-black-50">
+                                        Mastering Python To Prepare For Data
+                                        Science And AI And Automating Things in
+                                        Your Life
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top position-relative">
+                                <div class="card-image w-100 h-100">
+                                    <img
+                                        src="imgs/course-05.jpg"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div
+                                    class="card-user position-absolute top-0 m-3"
+                                >
+                                    <img
+                                        src="imgs/team-05.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="card-content p-3">
+                                <div class="card-text">
+                                    <h6 class="fw-bold mt-3 mb-3">
+                                        PHP Examples
+                                    </h6>
+                                    <p class="text-black-50">
+                                        PHP Tutorials And Examples And Practice
+                                        On Web Application And Connecting With
+                                        Databases
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="card-section w-100 text-center position-relative"
+                                >
+                                    <div
+                                        class="divider position-absolute bottom-50"
+                                    ></div>
+                                    <div
+                                        class="course-label btn btn-primary position-relative"
+                                    >
+                                        Course Info
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="text-black-50 d-flex justify-content-between course-data"
+                                >
+                                    <div class="users">
+                                        <i class="fa-regular fa-user me-1"></i>
+                                        <span>1.8K</span>
+                                    </div>
+
+                                    <div class="profit">
+                                        <i
+                                            class="fa-solid fa-dollar-sign me-1"
+                                        ></i>
+                                        <span>500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
