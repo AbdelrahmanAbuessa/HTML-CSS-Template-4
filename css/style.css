@@ -364,6 +364,242 @@
     width: 2.5rem;
 }
 
+.progress-list .line {
+    width: 2px;
+    background-color: var(--blue);
+    left: 1rem;
+    transform: translate(-50%);
+}
+
+.project-indicator {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+    background-color: white;
+}
+
+.project-indicator div {
+    border-radius: 100%;
+}
+
+.project-indicator .completed {
+    background-color: var(--blue);
+}
+
+.project-indicator .current {
+    animation: 1s infinite ease-in-out fade;
+}
+
+.reminder .reminder-content > span {
+    font-size: 0.85rem;
+}
+
+.reminder .decoration-ball {
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+}
+
+.reminder .reminder-content {
+    border-left: 2px solid black;
+}
+
+.reminder.blue .decoration-ball {
+    background-color: var(--blue);
+}
+.reminder.green .decoration-ball {
+    background-color: var(--green);
+}
+.reminder.yellow .decoration-ball {
+    background-color: var(--yellow);
+}
+.reminder.red .decoration-ball {
+    background-color: var(--red);
+}
+
+.reminder.blue .reminder-content {
+    border-color: var(--blue);
+}
+.reminder.green .reminder-content {
+    border-color: var(--green);
+}
+.reminder.yellow .reminder-content {
+    border-color: var(--yellow);
+}
+.reminder.red .reminder-content {
+    border-color: var(--red);
+}
+
+.post-content .user-image {
+    width: 3rem;
+}
+
+.social {
+    height: 3rem;
+}
+
+.social .social-icon {
+    width: 3rem;
+    height: 3rem;
+    transition-duration: 0.3s;
+}
+
+.social .social-icon:hover {
+    transform: rotate(5deg);
+}
+
+.social .social-label {
+    padding: 2px 7px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.social .social-stat > span {
+    font-size: 0.85rem;
+}
+
+.social.twitter {
+    background-color: #d2ecfc;
+}
+.social.twitter .social-label {
+    background-color: #1da1f2;
+}
+.social.twitter .social-stat > span {
+    color: #1da1f2;
+}
+.social.twitter .social-icon {
+    background-color: #1da1f2;
+}
+
+.social.facebook {
+    background-color: #d1e4fc;
+}
+.social.facebook .social-label {
+    background-color: #1877f2;
+}
+.social.facebook .social-stat > span {
+    color: #1877f2;
+}
+.social.facebook .social-icon {
+    background-color: #1877f2;
+}
+
+.social.youtube {
+    background-color: #ffcccc;
+}
+.social.youtube .social-label {
+    background-color: #ff0000;
+}
+.social.youtube .social-stat > span {
+    color: #ff0000;
+}
+.social.youtube .social-icon {
+    background-color: #ff0000;
+}
+
+.social.linked {
+    background-color: #cce4f0;
+}
+.social.linked .social-label {
+    background-color: #0077b5;
+}
+.social.linked .social-stat > span {
+    color: #0077b5;
+}
+.social.linked .social-icon {
+    background-color: #0077b5;
+}
+
+.project-table {
+    grid-column: 1 / -1;
+    order: 99999;
+}
+
+.project-table .table-content {
+    overflow-x: auto;
+}
+
+.project-table .table-content table {
+    min-width: 1000px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.project-table .table-content table {
+    border-color: var(--off-white) !important;
+}
+
+.project-table .table-content table th {
+    background-color: var(--off-white) !important;
+}
+
+.project-table .table-content table tr td {
+    transition-duration: 0.3s;
+}
+
+.project-table .table-content th,
+.project-table .table-content td {
+    padding: 1rem;
+    align-content: center;
+}
+
+.project-table .table-content .status-label {
+    background-color: var(--off-white);
+    padding: 4px 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    width: max-content;
+}
+
+.project-table .table-content .status-label.pending {
+    background-color: var(--yellow);
+}
+.project-table .table-content .status-label.rejected {
+    background-color: var(--red);
+}
+.project-table .table-content .status-label.in-progress {
+    background-color: var(--blue);
+}
+.project-table .table-content .status-label.completed {
+    background-color: var(--green);
+}
+
+.team-members .member {
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+}
+
+.team-members .member:hover {
+    z-index: 99;
+    cursor: pointer;
+}
+
+.team-members .member img {
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (min-width: 576px) {
     .side-item {
         width: 100%;
