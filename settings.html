@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Template 4 - Courses</title>
+
+        <style>
+            * {
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--backdrop) !important;
+            }
+
+            .row {
+                margin: 0 !important;
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-lg.css" />
+        <link rel="stylesheet" href="css/courses.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="row w-100">
+            <div class="side col-lg-2 col-3 p-3">
+                <h1 class="user text-center mb-2 mt-2 fs-4 fw-bold">Abou</h1>
+
+                <div
+                    class="decoration d-none d-sm-block mt-3 mb-3 w-50 position-relative"
+                ></div>
+
+                <a
+                    href="index.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Dashboard</span>
+                </a>
+
+                <a
+                    href="settings.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2 ms-sm-2"
+                        >Settings</span
+                    >
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Profile</span>
+                </a>
+
+                <a
+                    href="projects.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Projects</span>
+                </a>
+
+                <a
+                    href="courses.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center active"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Courses</span>
+                </a>
+
+                <a
+                    href="friends.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Friends</span>
+                </a>
+
+                <a
+                    href="files.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Files</span>
+                </a>
+
+                <a
+                    href="plans.html"
+                    class="side-item text-decoration-none text-dark m-2 p-2 d-flex justify-content-center justify-content-sm-start align-items-center"
+                >
+                    <div class="nav-icon">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+
+                    <span class="d-none d-sm-inline ms-sm-2">Plans</span>
+                </a>
+            </div>
+
+            <div class="page col-9 col-lg-10 h-100 p-0">
+                <div
+                    class="top-bar ps-3 pe-3 container-fluid d-flex justify-content-between align-items-center"
+                >
+                    <div class="search d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" class="ms-2" />
+                    </div>
+
+                    <div
+                        class="top-icons d-flex justify-content-center align-items-center"
+                    >
+                        <div
+                            class="top-notifs position-relative me-3 d-flex justify-content-center align-items-center"
+                        >
+                            <i class="fa-regular fa-bell w-75 h-75"></i>
+                        </div>
+                        <div class="top-user">
+                            <img
+                                src="imgs/avatar.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content p-3">
+                    <span
+                        class="fw-bold title position-relative d-inline-block fs-1 mb-4"
+                    >
+                        Courses
+                    </span>
+
+                    <div class="cards-500 d-grid gap-3">
+                        <div class="card p-3">
+                            <h3 class="fw-bold">Site Control</h3>
+                            <p class="text-black-50">
+                                Control the website if there is maintenance
+                            </p>
+
+                            <div
+                                class="setting d-flex justify-content-between align-items-center"
+                            >
+                                <div
+                                    class="setting-text d-flex justify-content-center align-items-center"
+                                >
+                                    <div class="text">
+                                        <h6>Website Control</h6>
+                                        <p class="fs-08 text-black-50 m-0 p-0">
+                                            Open/Close the website and type the
+                                            reason
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="setting-toggle-check d-flex position-relative justify-content-center align-items-center"
+                                >
+                                    <input type="checkbox" id="check" checked />
+                                    <label
+                                        class="toggle position-relative"
+                                        for="check"
+                                    ></label>
+                                </div>
+                            </div>
+
+                            <textarea
+                                class="p-3 border-radius w-100 d-block close-message mt-3"
+                                placeholder="Close Message Content"
+                            ></textarea>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="fw-bold">General Info</h3>
+                            <p class="text-black-50">
+                                General information about your account
+                            </p>
+
+                            <div class="setting">
+                                <label for="fname" class="text-black-50"
+                                    >First Name</label
+                                >
+                                <input
+                                    class="p-2 mt-2 w-100 border-radius"
+                                    type="text"
+                                    placeholder="First Name"
+                                    id="fname"
+                                />
+                            </div>
+                            <div class="setting mt-3">
+                                <label for="lanme" class="text-black-50"
+                                    >Last Name</label
+                                >
+                                <input
+                                    class="p-2 mt-2 w-100 border-radius"
+                                    type="text"
+                                    placeholder="Last Name"
+                                    id="lanme"
+                                />
+                            </div>
+                            <div class="setting mt-3">
+                                <label for="mail" class="text-black-50"
+                                    >Email</label
+                                >
+                                <div class="d-flex align-items-center">
+                                    <input
+                                        class="p-2 w-100 border-radius"
+                                        type="text"
+                                        placeholder="o@nn.sa"
+                                        id="mail"
+                                        disabled
+                                    />
+                                    <a
+                                        class="text-decoration-none fs-5 p-3"
+                                        href="#"
+                                        >Change</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="fw-bold">Security Info</h3>
+                            <p class="text-black-50">
+                                Security information about your account
+                            </p>
+
+                            <div
+                                class="setting security d-flex justify-content-between align-items-center pb-3 mb-3"
+                            >
+                                <div class="text">
+                                    <h6>Password</h6>
+                                    <p class="m-0 p-0 fs-08 text-black-50">
+                                        Last Change on 67/67/6767
+                                    </p>
+                                </div>
+                                <div class="btn btn-primary">Change</div>
+                            </div>
+                            <div
+                                class="setting security d-flex justify-content-between align-items-center pb-3 mb-3"
+                            >
+                                <div class="text">
+                                    <h6>Two-Factor Authorization</h6>
+                                    <p class="m-0 p-0 fs-08 text-black-50">
+                                        Enable/Disable The Feature
+                                    </p>
+                                </div>
+                                <div
+                                    class="setting-toggle-check d-flex position-relative justify-content-center align-items-center"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        id="check2"
+                                        checked
+                                    />
+                                    <label
+                                        class="toggle position-relative"
+                                        for="check2"
+                                    ></label>
+                                </div>
+                            </div>
+                            <div
+                                class="setting security d-flex justify-content-between align-items-center pb-3 mb-3"
+                            >
+                                <div class="text">
+                                    <h6>Devices</h6>
+                                    <p class="m-0 p-0 fs-08 text-black-50">
+                                        Check the login devices list
+                                    </p>
+                                </div>
+                                <div class="btn btn-secondary">Devices</div>
+                            </div>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="fw-bold">Social Info</h3>
+                            <p class="text-black-50">
+                                Social Media Information
+                            </p>
+
+                            <div
+                                class="social border-radius d-flex justify-content-center align-items-center mb-3"
+                            >
+                                <div
+                                    class="logo p-2 d-flex justify-content-center align-items-center h-100"
+                                >
+                                    <i
+                                        class="fa-brands fa-twitter img-fluid"
+                                    ></i>
+                                </div>
+                                <input
+                                    class="w-100 p-2 border-none ps-3"
+                                    type="text"
+                                    placeholder="Twitter Username"
+                                />
+                            </div>
+
+                            <div
+                                class="social border-radius mb-3 d-flex justify-content-center align-items-center"
+                            >
+                                <div
+                                    class="logo p-2 d-flex justify-content-center align-items-center h-100"
+                                >
+                                    <i
+                                        class="fa-brands fa-twitter img-fluid"
+                                    ></i>
+                                </div>
+                                <input
+                                    class="w-100 p-2 border-none ps-3"
+                                    type="text"
+                                    placeholder="Twitter Username"
+                                />
+                            </div>
+
+                            <div
+                                class="social border-radius d-flex mb-3 justify-content-center align-items-center"
+                            >
+                                <div
+                                    class="logo p-2 d-flex justify-content-center align-items-center h-100"
+                                >
+                                    <i
+                                        class="fa-brands fa-twitter img-fluid"
+                                    ></i>
+                                </div>
+                                <input
+                                    class="w-100 p-2 border-none ps-3"
+                                    type="text"
+                                    placeholder="Twitter Username"
+                                />
+                            </div>
+
+                            <div
+                                class="social border-radius d-flex mb-3 justify-content-center align-items-center"
+                            >
+                                <div
+                                    class="logo p-2 d-flex justify-content-center align-items-center h-100"
+                                >
+                                    <i
+                                        class="fa-brands fa-twitter img-fluid"
+                                    ></i>
+                                </div>
+                                <input
+                                    class="w-100 p-2 border-none ps-3"
+                                    type="text"
+                                    placeholder="Twitter Username"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="fw-bold">Widgets Control</h3>
+                            <p class="text-black-50">Show/Hide Widgets</p>
+
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" checked id="one" />
+                                <label for="one" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" checked id="two" />
+                                <label for="two" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" checked id="three" />
+                                <label for="three" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" checked id="four" />
+                                <label for="four" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" id="five" />
+                                <label for="five" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                            <div class="widget position-relative mb-3">
+                                <input type="checkbox" checked id="six" />
+                                <label for="six" class="fw-semibold ps-4"
+                                    >Quick Draft</label
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="fw-bold">Backup Manager</h3>
+                            <p class="text-black-50">
+                                Control Backup Time and Location
+                            </p>
+
+                            <div class="widget-radio position-relative mb-3">
+                                <input
+                                    type="radio"
+                                    checked
+                                    id="r1"
+                                    name="rad"
+                                />
+                                <label for="r1" class="fw-semibold ps-4"
+                                    >Daily</label
+                                >
+                            </div>
+                            <div class="widget-radio position-relative mb-3">
+                                <input type="radio" id="r2" name="rad" />
+                                <label for="r2" class="fw-semibold ps-4"
+                                    >Weekly</label
+                                >
+                            </div>
+                            <div class="widget-radio position-relative">
+                                <input type="radio" id="r3" name="rad" />
+                                <label for="r3" class="fw-semibold ps-4"
+                                    >Monthly</label
+                                >
+                            </div>
+
+                            <hr />
+
+                            <div class="servers d-md-flex gap-1">
+                                <input type="radio" name="server" id="s1" />
+                                <div
+                                    class="server text-center p-3 border-radius w-100"
+                                >
+                                    <label for="s1" class="w-100 h-100">
+                                        <div
+                                            class="icon w-100 d-flex justify-content-center align-items-center mb-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-server d-block h-100"
+                                            ></i>
+                                        </div>
+                                        Zero
+                                    </label>
+                                </div>
+                                <input type="radio" name="server" id="s2" />
+                                <div
+                                    class="server text-center p-3 border-radius w-100"
+                                >
+                                    <label for="s2" class="w-100 h-100">
+                                        <div
+                                            class="icon w-100 d-flex justify-content-center align-items-center mb-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-server d-block h-100"
+                                            ></i>
+                                        </div>
+                                        Sigma
+                                    </label>
+                                </div>
+                                <input
+                                    type="radio"
+                                    name="server"
+                                    id="s3"
+                                    checked
+                                />
+                                <div
+                                    class="server text-center p-3 border-radius w-100"
+                                >
+                                    <label for="s3" class="w-100 h-100">
+                                        <div
+                                            class="icon w-100 d-flex justify-content-center align-items-center mb-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-server d-block h-100"
+                                            ></i>
+                                        </div>
+                                        Megaman
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
